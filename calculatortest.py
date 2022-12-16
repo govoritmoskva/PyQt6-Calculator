@@ -3,45 +3,6 @@ from PyQt6 import QtWidgets
 from PyQt6.QtWidgets import QApplication, QMainWindow
 
 
-"""class Window(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Простая программа")
-        self.setGeometry(300, 250, 400, 200)
-        self.main_text = QtWidgets.QLabel(self)
-       
-        self.text1 = "пончики шоколадные"
-        self.text2 = "пончики ванильные"
-        self.flag = True
-        
-        self.main_text.setText(self.text1)
-        self.main_text.move(100,100)
-        self.main_text.adjustSize()
-        
-        self.btn = QtWidgets.QPushButton(self)
-        self.btn.move(10, 10)
-        self.btn.setText("аууууууууууу🥶🥶🥶")
-        self.btn.clicked.connect(self.btn_handler)
-    
-      
-    def btn_handler(self):
-        print("НАЖАТА КНОПКА")
-        if self.flag == True:
-            self.main_text.setText(self.text2)
-            self.flag = False
-        else:
-            self.main_text.setText(self.text1)
-            self.flag = True
-
-        
-def application():
-    app = QApplication(sys.argv)
-    window = Window()
-    window.show()
-    sys.exit(app.exec())
-print("a = ", a)
-if __name__ == '__main__':
-    application()"""
 style_sheet = """
         QWidget {
             background-color:orange;
@@ -52,6 +13,7 @@ style_sheet = """
             border-size:15px;
             font-size:15px;
         }"""
+
 class Window(QMainWindow):
     def __init__(self):
         super(Window, self).__init__()
